@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CruiseCraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: red;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        nav a:hover {
+            transition: 0.7s;
+            text-transform: uppercase;
+        }
+
+        .specs {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .specs img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .specs h2 {
+            color: #333;
+        }
+
+        .specs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .specs li {
+            padding: 10px 0;
+        }
+
+        .collection {
+            list-style: inside;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .login-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        #login-form {
+            display: none;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: red;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        #login-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        #login-form button {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+
+        }
+
+        footer {
+            margin-top: 50px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo_header.jpeg" alt="logo" style="width: 55px; height: 50px; border-radius: 50%;">
+        <h1 id="Home">©CruiseCraft</h1>
+    </header>
+
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Specs">Specs</a>
+        <a href="#Contacts">Contact</a>
+        <section style="text-align: right;">
+            <div class="login-container">
+                <button onclick="toggleLoginForm()">Login</button>
+                <div id="login-form">
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <div class="collection">
+        <h1>Our Collection:</h1>
+        <ol>
+            <li><a href="#mclaren">McLaren 750S</a></li>
+            <li><a href="#audi">Audi R8</a></li>
+            <li><a href="#porsche">Porsche 911 GT3 RS</a></li>
+            <li><a href="#p1">McLaren P1</a></li>
+        </ol>
+    </div>
+    <div class="specs" id="Specs">
+        <img src="mclaren.webp" alt="Royal Enfield Bike" id="mclaren">
+        <h2>McLaren 750S</h2>
+        <h2></h2>
+        <ul>
+            <li><strong>Engine:</strong> 3994 cc</li>
+            <li><strong>Fuel Type:</strong> Petrol</li>
+            <li><strong>Power and Torque:</strong> 740 bhp & 800 Nm</li>
+            <li><strong>DriveTrain :</strong> RWD</li>
+            <li><strong>Acceleration:</strong> 2.8 seconds</li>
+            <li><strong>Top Speed:</strong> 332 kmph</li>
+            <li><strong>Price:</strong> Rs. 5.91 Crore</li>
+        </ul>
+        <hr>
+        <img src="audi r8.webp" alt="Royal Enfield Bike" id="audi">
+        <h2>Audi R8</h2>
+        <ul>
+            <li><strong>Engine Type:</strong> Petrol Engine</li>
+            <li><strong>Displacement (cc):</strong> 5204</li>
+            <li><strong>Max Power:</strong> 602bhp@8250rpm</li>
+            <li><strong>Max Torque:</strong> 560Nm@6500rpm</li>
+            <li><strong>Transmission Type:</strong> Automatic</li>
+            <li><strong>Gear Box:</strong> 7 Speed</li>
+            <li><strong>Price:</strong> Rs. 2.30 Crore</li>
+        </ul>
+        <hr>
+        <img src="porche.webp" alt="Royal Enfield Bike" id="porsche">
+        <h2>Porsche 911 GT3 RS</h2>
+        <ul>
+            <li><strong>Top Speed:</strong> 296 Kmph</li>
+            <li><strong>Acceleration (0-100 kmph):</strong> 3.2 seconds</li>
+            <li><strong>Engine:</strong> 3996 cc, 6 Cylinders Flat, 4 Valves/Cylinder, DOHC</li>
+            <li><strong>Engine Type:</strong> Naturally Aspirated</li>
+            <li><strong>Fuel Type:</strong> Petrol</li>
+            <li><strong>Mileage (ARAI):</strong> 7.4 kmpl</li>
+            <li><strong>Price:</strong> Rs. 3.25 Crore</li>
+        </ul>
+        <hr>
+        <img src="McLaren_P1.jpg" alt="Royal Enfield Bike" id="p1">
+        <h2>Mclaren P1</h2>
+        <ul>
+            <li><strong>Maximum Speed:</strong> 350kph (217mph)</li>
+            <li><strong>0-100kph (62mph):</strong> 2.8 seconds</li>
+            <li><strong>0-200kph (124mph):</strong> 6.8s</li>
+            <li><strong>Maximum Power:</strong> 916PS (903bhp)</li>
+            <li><strong>Maximum Torque:</strong> Petrol</li>
+            <li><strong>Mileage (ARAI):</strong> 7.4 kmpl</li>
+            <li><strong>Price:</strong> Rs. 5.91 Crore</li>
+
+        </ul>
+    </div>
+    <footer id="Contacts">
+        <h2>Contact Me:</h2>
+        <p><strong>©CruiseCraft</strong></p>
+        <p><strong>Address</strong>: 17/3, Old Madras Rd, Binnamangala, H Colony, Indiranagar, Bengaluru, Karnataka
+            560038</p>
+        <p><strong>Phone:</strong> 088841 22228</p>
+    </footer>
+    <script>
+        function toggleLoginForm() {
+            var loginForm = document.getElementById("login-form");
+            loginForm.style.display = loginForm.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>
